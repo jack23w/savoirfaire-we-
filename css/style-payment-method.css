@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f1ec;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+main .page-payment-method {
+  background-color: #6c9286;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+}
+main .page-payment-method .payment-method-content .method-payments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f1ec;
+  border-radius: 12px;
+  position: relative;
+  padding: 10px;
+  margin-top: 20px;
+}
+main
+  .page-payment-method
+  .payment-method-content
+  .method-payments
+  .method-description
+  input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+main
+  .page-payment-method
+  .payment-method-content
+  .method-payments
+  .method-description
+  label {
+  position: relative;
+  bottom: 5px;
+  padding-left: 5px;
+}
+main
+  .page-payment-method
+  .payment-method-content
+  .method-payments
+  .icon-image
+  img {
+  width: 3rem;
+}
+main .page-payment-method .payment-method-content .submit-method-payment {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  top: 20px;
+}

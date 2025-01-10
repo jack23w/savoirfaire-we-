@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f1ec;
+}
+
+main .content-open {
+  max-width: 1500px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  margin-top: 4rem;
+}
+main .content-open .sub-content {
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px;
+  background-color: #2d9596;
+}
+main .content-open .sub-content button {
+  background-color: #365b6d;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  border-radius: 10px;
+  font-size: larger;
+}
+main .content {
+  max-width: 1500px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+main .content .content-description {
+  padding: 10px;
+}
+main .content .content-description h3 {
+  font-family: "Lora", serif;
+  color: #365b6d;
+}
+main .content .content-description p {
+  font-family: "Lora", serif;
+  color: #365b6d;
+  text-align: justify;
+  padding: 0px 10px 0px 10px;
+}
+main .content .content-description button {
+  border: none;
+  border-radius: 10px;
+  background-color: #6c9286;
+  color: white;
+  position: relative;
+  left: 5px;
+  padding: 10px 20px 10px 20px;
+}
+main .content-work .content-image {
+  flex: 1;
+  display: flex;
+}
+main .content-work .content-image img {
+  margin: auto;
+  min-width: 250px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  main .content-open {
+    flex-direction: column; 
+  }
+  main .content-open .sub-content {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+  }
+  main .content {
+    flex-direction: column; 
+  }
+  main .content .content-description {
+    text-align: center; 
+  }
+  main .content .content-image {
+    margin-top: 20px; 
+    order: -1;
+  }
+  main .content .content-image img {
+    width: 100%;
+  }
+}

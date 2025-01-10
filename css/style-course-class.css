@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    #f2f1ec 25%,
+    #f2f1ec 50%,
+    #6c9286 50%,
+    #6c9286 100%
+  );
+}
+
+main {
+  display: flex;
+  align-items: center; /* Menengahkan vertikal */
+  justify-content: center; /* Menengahkan horizontal */
+  height: 100vh; /* Optional, sesuaikan dengan kebutuhan */
+}
+main .page-premium-class {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  max-width: 1140px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .page-premium-class .premium-class {
+  width: 50%;
+}
+main
+  .page-premium-class
+  .premium-class
+  .premium-class-content
+  .content-judul
+  h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+main
+  .page-premium-class
+  .premium-class
+  .premium-class-content
+  .content-judul
+  p {
+  position: relative;
+  bottom: 15px;
+  font-family: "Lora", serif;
+}
+main
+  .page-premium-class
+  .premium-class
+  .premium-class-content
+  .content-description-check {
+  padding-block-start: 2px;
+}
+main
+  .page-premium-class
+  .premium-class
+  .premium-class-content
+  .content-description-check
+  h3 {
+  font-family: "Poppins", sans-serif;
+}
+main
+  .page-premium-class
+  .premium-class
+  .premium-class-content
+  .content-description-check
+  .content-description-list {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+main
+  .page-premium-class
+  .premium-class
+  .premium-class-content
+  .content-description-check
+  .content-description-list
+  .content-description {
+  flex: 1 1;
+}
+
+main .page-premium-class .price-premium-class {
+  width: 50%;
+}
+main .page-premium-class .price-premium-class .price-premium-class-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+main
+  .page-premium-class
+  .price-premium-class
+  .price-premium-class-content
+  .price-class
+  .heading-price-class {
+  background-color: #2d9596;
+  color: white;
+  padding: 2px;
+  text-align: center;
+  font-family: "Lora", serif;
+  /* width: 50%; */
+  border-radius: 999px;
+}
+main
+  .page-premium-class
+  .price-premium-class
+  .price-premium-class-content
+  .price-class {
+  flex: 1 1;
+}
+main
+  .page-premium-class
+  .price-premium-class
+  .price-premium-class-content
+  .price-class
+  h2 {
+  text-align: center;
+  font-size: 30px;
+}
+main
+  .page-premium-class
+  .price-premium-class
+  .price-premium-class-content
+  .price-class
+  button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  font-family: "Lora", serif;
+  padding: 10px 20px;
+  /* padding: 12px 17px 12px 17px; */
+  background-color: #6c9286;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  display: inline-block;
+}
+main
+  .page-premium-class
+  .price-premium-class
+  .price-premium-class-content
+  .price-class
+  button:hover {
+  background-color: #304D30;
+}
+main
+  .page-premium-class
+  .price-premium-class
+  .price-premium-class-content
+  .price-class
+  p {
+  text-align: center;
+  font-family: "Lora", serif;
+}
+
+@media screen and (min-width: 768px) {
+  main .page-premium-class {
+    flex-direction: row;
+  }
+
+  main .page-premium-class .premium-class,
+  main .page-premium-class .price-premium-class {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .page-premium-class {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  main .page-premium-class .premium-class,
+  main .page-premium-class .price-premium-class {
+    width: 100%;
+  }
+
+  main
+    .page-premium-class
+    .premium-class
+    .premium-class-content
+    .content-judul {
+    text-align: center;
+  }
+
+  main
+    .page-premium-class
+    .premium-class
+    .premium-class-content
+    .content-judul
+    h1 {
+    font-size: 32px;
+  }
+
+  main
+    .page-premium-class
+    .premium-class
+    .premium-class-content
+    .content-judul
+    p {
+    bottom: 0;
+  }
+
+  main
+    .page-premium-class
+    .premium-class
+    .premium-class-content
+    .content-description-check
+    .content-description-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  main
+    .page-premium-class
+    .price-premium-class
+    .price-premium-class-content
+    .price-class {
+    margin-top: 2rem;
+  }
+}

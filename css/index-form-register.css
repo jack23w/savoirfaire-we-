@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+}
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+main .content .content-description {
+  flex: 1 1;
+}
+main .content .content-description .title {
+  font-size: 4.5rem;
+  margin-block: 1rem;
+  color: white;
+}
+main .content .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.4rem;
+  color: white;
+}
+main .content .content-description button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #2d3e50;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+main .content .content-description button:hover {
+  border: 3px solid #2d3e50;
+  color: #2d3e50;
+  background-color: transparent;
+}
+main .content .content-form {
+  flex: 1;
+  display: flex;
+}
+main .content .content-form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+}
+main .content .content-form h1 {
+  font-family: "Poppins", sans-serif;
+}
+main .content .content-form .garis-line {
+  min-width: 100px;
+  width: 35%;
+  border-radius: 10px;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+main .content .content-form p {
+  text-align: center;
+  padding-top: 10px;
+}
+main .content .content-form p a:hover {
+  text-decoration: underline;
+}
+main .content .content-form form input {
+  height: 55px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding: 0 14px;
+}
+main .content .content-form form input:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+::placeholder {
+  color: #777;
+  font-size: 1.063rem;
+}
+main .content .content-form .link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+main .content .content-form .link .login {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #1877f2;
+  padding: 15px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+main .content .content-form .link .login:hover {
+  background: #0d65d9;
+}
+main .content .content-form form a {
+  text-decoration: none;
+}
+main .content .content-form .link .forgot {
+  color: #1877f2;
+  font-size: 1rem;
+}
+main .content .content-form .link .forgot:hover {
+  text-decoration: underline;
+}
+main .content .content-form hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+main .content .content-form .button {
+  margin-top: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .content .content-form .button a {
+  padding: 15px 20px;
+  background: #42b72a;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.063rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  width: 100%;
+}
+main .content .content-form .button a:hover {
+  background: #3ba626;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: auto;
+  }
+  main {
+    padding: 2rem 4%;
+  }
+  /* Bagian responsive keseluruhan */
+  main .content {
+    flex-direction: column; /* fungsinya yaitu, katika ukurannya mengecil, maka akan membuat kolom baru dibawahnya*/
+    gap: 2rem;
+  }
+  /* Bagian responsive pada form, ketika ukurannya < 768px */
+  main .content .content-form {
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .content .content-form .garis-line {
+    max-width: 30%;
+    min-width: 25%;
+  }
+}
